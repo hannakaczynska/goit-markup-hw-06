@@ -569,3 +569,59 @@ ul {
 .portfolio_section figure:hover .overlay {
   top: 0px;
 }
+
+/* ---FORMULARZ--- */
+
+.title_label {
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.fieldset {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--second-color);
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  margin-bottom: 28px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0;
+}
+
+.fieldset .label {
+  position: absolute;
+  top: -18px;
+  left: 0px;
+}
+
+.fieldset .icone {
+  margin: 11px 12px;
+}
+
+.fieldset .input {
+  border: transparent;
+  outline: none;
+  padding: 0;
+}
+
+.feedback {
+  height: 120px;
+  margin-bottom: 20px;
+}
+/* 
+.feedback .input {
+  /* position: absolute; */
+  height: 96px;
+  width: 416px;
+  margin: 12px 16px;
+} */
+
