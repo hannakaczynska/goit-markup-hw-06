@@ -617,11 +617,7 @@ ul {
   height: 120px;
   margin-bottom: 20px;
 }
-/* 
-.feedback .input {
-  /* position: absolute; */
-  height: 96px;
-  width: 416px;
-  margin: 12px 16px;
-} */
 
+.feedback .input {
+margin: 12px 16px;
+}
