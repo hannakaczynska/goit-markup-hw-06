@@ -67,9 +67,51 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal_button" data-modal-close><svg width="11px" height="11px">
-                <use href="./images/icons.svg#icon-Vector"></use>
-              </svg></button>
+              <button class="modal_button" data-modal-close>
+                <svg width="11px" height="11px">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </button>
+              <form>
+                <label class="title_label">Zostaw swoje dane w formularzu poniżej</label>
+                <fieldset class="fieldset">
+                  <label class="label" for="user_name">Imie</label>
+                  <svg class="icone" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-name"></use>
+                  </svg>
+                  <input class="input" type="text" name="text" id="user_name" />
+                </fieldset>
+                <fieldset class="fieldset">
+                  <label class="label" for="phone_numer">Telefon</label>
+                  <svg class="icone" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  <input 
+                  class="input"
+                    type="tel"
+                    name="phone_number"
+                    id="phone_number"
+                  />
+                </fieldset>
+                <fieldset class="fieldset">
+                  <label class="label" for="email">Email</label>
+                  <svg class="icone" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                  <input class="input" type="email" name="email" id="email" />
+                </fieldset>
+                <fieldset class="fieldset feedback">
+                  <label class="label" for="feedback">Komentarz</label>
+                  <input class="input"
+                    type="text"
+                    name="feedback"
+                    placeholder="Wprowadź tekst"
+                  />
+                </fieldset>
+                <input type="checkbox" name="checkbox" id="checkbox"/>
+                <label for="checkbox">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
+                <button type="submit">Wyślij</button>
+              </form>
             </div>
           </div>
         </div>
