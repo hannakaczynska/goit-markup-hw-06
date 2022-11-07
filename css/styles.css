@@ -393,7 +393,7 @@ ul {
 
 .footer_list {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
 }
 
 .footer_logo {
@@ -440,10 +440,15 @@ ul {
   color: var(--brand-color);
 }
 
+.join_us {
+  margin-left: 70px;
+}
+
 .join_us h5 {
   color: var(--third-brand-color);
   font-weight: 700;
   font-size: 14px;
+  letter-spacing: 0.03em;
   margin-bottom: 20px;
   margin-top: 12px;
 }
@@ -461,6 +466,49 @@ ul {
 .footer_list .social_links_icons a:hover,
 .footer_list .social_links_icons a:focus {
   background-color: var(--brand-color);
+}
+
+.newsletter_form {
+  margin-left: 78px;
+}
+
+.newsletter_form .newsletter {
+  color: var(--third-brand-color);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin-top: 12px;
+  display: block;
+}
+
+.newsletter_form div {
+  display: flex;
+  position: relative;
+}
+
+.newsletter_form .input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  outline: 0;
+  background-color: transparent;
+  margin-right: 12px;
+  margin-top: 20px;
+}
+
+.newsletter_form .submit {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 40px;
+  padding-right: 72px;
+}
+
+.newsletter_form .icon {
+  position: absolute;
+  right: 28px;
+  bottom: 13px;
 }
 
 /* portfolio body*/
@@ -575,6 +623,7 @@ ul {
 .title_label {
   font-size: 20px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   display: block;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -583,6 +632,7 @@ ul {
 .fieldset {
   font-size: 12px;
   font-weight: 400;
+  letter-spacing: 0.01em;
   color: var(--second-color);
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -595,6 +645,7 @@ ul {
   position: relative;
   align-items: center;
   padding: 0;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fieldset .label {
@@ -603,21 +654,99 @@ ul {
   left: 0px;
 }
 
-.fieldset .icone {
+.fieldset .icon {
   margin: 11px 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fieldset .input {
   border: transparent;
   outline: none;
   padding: 0;
+  width: 300px;
 }
 
-.feedback {
+.fieldset:has(input:focus) {
+  border: 1px solid var(--brand-color);
+}
+
+.fieldset:has(input:focus) .icon {
+  fill: var(--brand-color);
+}
+
+.comment {
   height: 120px;
-  margin-bottom: 20px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.feedback .input {
-margin: 12px 16px;
+.comment .textarea {
+  margin: 12px 16px;
+  height: calc(100% - 24px);
+  width: calc(100% - 32px);
+  outline: none;
+  border: none;
+  resize: none;
+  overflow: hidden;
+}
+
+.comment .textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+}
+
+.comment:has(textarea:focus) {
+  border: 1px solid var(--brand-color);
+}
+
+.rules_checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.icon_check svg {
+  position: absolute;
+  left: 54px;
+  top: 0;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.checkbox:checked + .icon_check svg {
+  visibility: visible;
+}
+
+.rules {
+  font-size: 14px;
+  color: var(--second-color);
+  letter-spacing: 0.03em;
+}
+
+.rules a {
+  color: var(--brand-color);
+}
+
+.submit {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-family: 'Roboto', sans-serif;
+  color: var(--third-brand-color);
+  background: var(--brand-color);
+  width: 200px;
+  height: 50px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
