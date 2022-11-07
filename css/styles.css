@@ -717,11 +717,11 @@ ul {
   left: 54px;
   top: 0;
   cursor: pointer;
-  visibility: hidden;
+  opacity: 0;
 }
 
 .checkbox:checked + .icon_check svg {
-  visibility: visible;
+  opacity: 1;
 }
 
 .rules {
