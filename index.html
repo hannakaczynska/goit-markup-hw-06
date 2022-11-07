@@ -73,44 +73,82 @@
                 </svg>
               </button>
               <form>
-                <label class="title_label">Zostaw swoje dane w formularzu poniżej</label>
+                <label class="title_label"
+                  >Zostaw swoje dane w formularzu poniżej</label
+                >
                 <fieldset class="fieldset">
                   <label class="label" for="user_name">Imie</label>
-                  <svg class="icone" width="18px" height="18px">
+                  <svg class="icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-name"></use>
                   </svg>
-                  <input class="input" type="text" name="text" id="user_name" />
+                  <input
+                    class="input"
+                    type="text"
+                    name="user_name"
+                    id="user_name"
+                    required
+                  />
                 </fieldset>
                 <fieldset class="fieldset">
-                  <label class="label" for="phone_numer">Telefon</label>
-                  <svg class="icone" width="18px" height="18px">
+                  <label class="label" for="phone_numer"
+                    >Telefon</label
+                  >
+                  <svg class="icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
-                  <input 
-                  class="input"
+                  <input
+                    class="input"
                     type="tel"
                     name="phone_number"
                     id="phone_number"
+                    required
                   />
                 </fieldset>
                 <fieldset class="fieldset">
                   <label class="label" for="email">Email</label>
-                  <svg class="icone" width="18px" height="18px">
+                  <svg class="icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-email"></use>
                   </svg>
-                  <input class="input" type="email" name="email" id="email" />
-                </fieldset>
-                <fieldset class="fieldset feedback">
-                  <label class="label" for="feedback">Komentarz</label>
-                  <input class="input"
-                    type="text"
-                    name="feedback"
-                    placeholder="Wprowadź tekst"
+                  <input
+                    class="input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
                   />
                 </fieldset>
-                <input type="checkbox" name="checkbox" id="checkbox"/>
-                <label for="checkbox">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
-                <button type="submit">Wyślij</button>
+                <fieldset class="fieldset comment">
+                  <label class="label" for="comment">Komentarz</label>
+                  <textarea
+                    class="textarea"
+                    name="comment"
+                    id="comment"
+                    rows="6"
+                    placeholder="Wprowadź tekst"
+                    required
+                  ></textarea>
+                </fieldset>
+                <label class="rules_checkbox">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="checkbox"
+                    required
+                  />
+                  <span class="icon_check">
+                    <svg width="16px" height="15px">
+                      <use
+                        href="./images/icons.svg#icon-icon-check"
+                      ></use>
+                    </svg>
+                  </span>
+                  <div class="rules">
+                    Oświadczam iż akceptuję
+                    <a href="#">Regulamin</a> i
+                    <a href="#">Politykę Prywatności</a>.
+                  </div>
+                </label>
+                <button class="submit" type="submit">Wyślij</button>
               </form>
             </div>
           </div>
@@ -532,6 +570,30 @@
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="newsletter_form">
+            <form>
+              <label class="newsletter" for="newsletter"
+                >ZAPISZ SIĘ DO NEWSLETTERA</label
+              >
+              <div>
+                <input
+                  class="input"
+                  type="email"
+                  name="email_newsletter"
+                  id="newsletter"
+                  placeholder="E-mail"
+                />
+                <button class="submit" type="submit">
+                  Zapisz się
+                </button>
+                <svg class="icon" width="24px" height="24px">
+                  <use
+                    href="./images/icons.svg#icon-icon-send-1"
+                  ></use>
+                </svg>
+              </div>
+            </form>
           </li>
         </ul>
       </div>
