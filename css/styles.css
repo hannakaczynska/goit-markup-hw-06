@@ -170,6 +170,12 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
   margin-top: 30px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main_button:hover,
+.main_button:focus {
+  opacity: 0.8;
 }
 
 .backdrop {
@@ -510,6 +516,12 @@ ul {
   position: absolute;
   right: 28px;
   bottom: 13px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter_form:has(.submit:hover) .icon,
+.newsletter_form:has(.submit:focus) .icon {
+  opacity: 0.8;
 }
 
 /* portfolio body*/
@@ -750,4 +762,10 @@ ul {
   cursor: pointer;
   margin-top: 30px;
   margin-bottom: 40px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit:hover,
+.submit:focus {
+  opacity: 0.8;
 }
